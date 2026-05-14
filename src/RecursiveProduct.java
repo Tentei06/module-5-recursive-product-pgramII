@@ -45,6 +45,8 @@ public class RecursiveProduct
 
         System.out.println("\nFinal product: " + product);
 
+        input.close();
+
     }
 
     public static int recursiveProduct(int[] numbers, int index)
