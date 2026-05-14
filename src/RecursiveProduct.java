@@ -21,3 +21,21 @@
 * Product of the 5 numbers
 
 */
+
+import java.util.Scanner;
+
+public class RecursiveProduct
+{
+
+    public static void main(String[] args)
+    {
+
+    }
+
+    public static int recursiveProduct(int[] numbers, int index)
+    {
+
+        return 0;
+    }
+
+}
