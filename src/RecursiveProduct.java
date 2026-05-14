@@ -29,13 +29,35 @@ public class RecursiveProduct
 
     public static void main(String[] args)
     {
+        Scanner input = new Scanner(System.in);
+
+        // Array stores 5 user numbers
+        int[] numbers = new int[5];
+
+        // Loop collects user input
+        for(int i = 0; i < numbers.length; i++)
+        {
+            System.out.print("Enter number " + (i + 1) + ": ");
+            numbers[i] = input.nextInt();
+        }
+
+        int product = recursiveProduct(numbers, 0);
+
+        System.out.println("\nFinal product: " + product);
 
     }
 
     public static int recursiveProduct(int[] numbers, int index)
     {
 
-        return 0;
+        // Base case stops recursion
+        if(index == numbers.length - 1)
+        { 
+            return numbers[index];
+        }
+
+        // Recursive case multiplies numbers 
+        return numbers[index] * recursiveProduct(numbers, index + 1);
     }
 
 }
