@@ -62,4 +62,16 @@ public class RecursiveProduct
         return numbers[index] * recursiveProduct(numbers, index + 1);
     }
 
+    // IMPROVEMENT: added iterative version to compare recursion with a loop
+    public static int iterativeProduct(int[] numbers)
+    {
+        int product = 1;
+        for (int i = 0; i < numbers.length; i++)
+        {
+            product = product * numbers [i];
+        }
+        
+        return product;
+    }
+
 }
