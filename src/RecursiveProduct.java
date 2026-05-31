@@ -41,9 +41,11 @@ public class RecursiveProduct
             numbers[i] = input.nextInt();
         }
 
-        int product = recursiveProduct(numbers, 0);
+        int recursiveResult = recursiveProduct(numbers, 0);
+        int iterativeResult = iterativeProduct(numbers);
 
-        System.out.println("\nFinal product: " + product);
+        System.out.println("\nRecursive product: " + recursiveResult);
+        System.out.println("Iterative product: " + iterativeResult);
 
         input.close();
 
